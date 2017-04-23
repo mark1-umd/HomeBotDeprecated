@@ -2,14 +2,16 @@
 
 ## Overview
 
-I am pleased to propose the HomeBot family of home automation robots as a product line concept for ACME robots.  The HomeBot system integrates best-of-breed individual robotic capabilities with each other, home automation systems, and humans.  Rather than trying to make a single robot with a too-versatile set of capabilities, elevating its cost and complexity, the HomeBot system uses best-of-breed robotic systems working together and in conjunction with household systems managed by home automation to manage domestic environments from small to large.
+The HomeBot family of home automation robots is a product line concept for ACME robots.  The HomeBot system integrates best-of-breed individual robotic capabilities with each other, home automation systems, and humans.  Rather than trying to make a single robot with a too-versatile set of capabilities, elevating its cost and complexity, the HomeBot system uses best-of-breed robotic systems working together and in conjunction with household systems managed by home automation to manage domestic environments from small to large.
+
 The HomeBot system can include products such as:
-    - ButtleBot – automated butler services (answers the door, greets guests, provides tele-presence, takes packages, delivers objects from room to room, and more)
-    - TrashBot – takes the trash out and down to the road for pickup by city services
-    - LawnBot – keeps lawns looking fresh cut
-    - WatchBot – patrols estate perimeters day and night from the ground or from the air
+
+- ButtleBot – automated butler services (answers the door, greets guests, provides tele-presence, takes packages, delivers objects from room to room, and more)
+- TrashBot – takes the trash out and down to the road for pickup by city services
+- LawnBot – keeps lawns looking fresh cut
+- WatchBot – patrols estate perimeters day and night from the ground or from the air
+
 The key to the HomeBot system is a ROS node that can interface one or more HomeBot robotic products with a home automation system, allowing them to interact bi-directionally; the robots can make requests of and send notifications to the home automation system, and the home automation system can make requests of and send notifications to the robotic systems.  These communications take place through the ROS Actionlib, a non-blocking service interface well-suited for this type of integration.
-As a proof-of-concept, I will deliver a high-level system design and an example Actionlib Action Server/Action Client interface intended for integration with a home automation system, and an example Actionlib Action Server/Action Client interface for use in combination with a HomeBot service robot product.  Depending on development time and your state of interest, I will work towards delivery of a capability demonstration using the Gazebo virtual environment and a simulated Turtlebot.
 
 ## License
 
@@ -61,7 +63,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ## Status
 
-## Pre-requisites
+## Prerequisites
 
 This ROS package has been built and tested for the Indigo-Igloo release of ROS.
 In order to build and use it, you will need to have ROS Indigo-Igloo installed on your system, along with the ROS dependencies identified in the package.xml manifest file (roscpp, rospy, std_msgs, message_generation, actionlib).  The instructions in this README.md file assume that you are familiar with ROS and the ROS catkin build system.
